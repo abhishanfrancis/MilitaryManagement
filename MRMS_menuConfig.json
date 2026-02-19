@@ -1,0 +1,251 @@
+{
+  "sections": [
+    {
+      "id": "main",
+      "title": null,
+      "collapsible": false,
+      "defaultOpen": true,
+      "items": [
+        {
+          "id": "dashboard",
+          "label": "Dashboard",
+          "icon": "fas fa-tachometer-alt",
+          "path": "/dashboard",
+          "permission": ["Admin", "BaseCommander", "LogisticsOfficer"]
+        }
+      ]
+    },
+    {
+      "id": "personnel",
+      "title": "Personnel Management",
+      "collapsible": true,
+      "defaultOpen": true,
+      "items": [
+        {
+          "id": "soldiers",
+          "label": "Soldiers",
+          "icon": "fas fa-user-tie",
+          "path": "/personnel/soldiers",
+          "badge": {
+            "count": 245,
+            "variant": "info"
+          },
+          "permission": ["Admin", "BaseCommander", "LogisticsOfficer"]
+        },
+        {
+          "id": "ranks",
+          "label": "Ranks",
+          "icon": "fas fa-medal",
+          "path": "/personnel/ranks",
+          "permission": ["Admin"]
+        },
+        {
+          "id": "assignments",
+          "label": "Assignments",
+          "icon": "fas fa-tasks",
+          "path": "/personnel/assignments",
+          "permission": ["Admin", "BaseCommander", "LogisticsOfficer"]
+        }
+      ]
+    },
+    {
+      "id": "units",
+      "title": "Unit Management",
+      "collapsible": true,
+      "defaultOpen": true,
+      "items": [
+        {
+          "id": "units-list",
+          "label": "Units",
+          "icon": "fas fa-sitemap",
+          "path": "/units/list",
+          "badge": {
+            "count": 12,
+            "variant": "info"
+          },
+          "permission": ["Admin", "BaseCommander"]
+        },
+        {
+          "id": "commanders",
+          "label": "Commanders",
+          "icon": "fas fa-user-secret",
+          "path": "/units/commanders",
+          "permission": ["Admin", "BaseCommander"]
+        },
+        {
+          "id": "unit-members",
+          "label": "Unit Members",
+          "icon": "fas fa-user-shield",
+          "path": "/units/members",
+          "permission": ["Admin", "BaseCommander", "LogisticsOfficer"]
+        }
+      ]
+    },
+    {
+      "id": "bases",
+      "title": "Base Management",
+      "collapsible": true,
+      "defaultOpen": true,
+      "items": [
+        {
+          "id": "bases-list",
+          "label": "Bases",
+          "icon": "fas fa-landmark",
+          "path": "/bases/list",
+          "badge": {
+            "count": 10,
+            "variant": "success"
+          },
+          "permission": ["Admin", "BaseCommander"]
+        },
+        {
+          "id": "capacity",
+          "label": "Capacity Status",
+          "icon": "fas fa-cubes",
+          "path": "/bases/capacity",
+          "badge": {
+            "count": 3,
+            "variant": "warning"
+          },
+          "permission": ["Admin", "BaseCommander", "LogisticsOfficer"]
+        },
+        {
+          "id": "deployments",
+          "label": "Deployment Locations",
+          "icon": "fas fa-map-marked-alt",
+          "path": "/bases/deployments",
+          "permission": ["Admin", "BaseCommander", "LogisticsOfficer"]
+        }
+      ]
+    },
+    {
+      "id": "equipment",
+      "title": "Equipment Management",
+      "collapsible": true,
+      "defaultOpen": true,
+      "items": [
+        {
+          "id": "equipment-inventory",
+          "label": "Equipment Inventory",
+          "icon": "fas fa-box",
+          "path": "/equipment/inventory",
+          "badge": {
+            "count": 342,
+            "variant": "info"
+          },
+          "permission": ["Admin", "BaseCommander", "LogisticsOfficer"]
+        },
+        {
+          "id": "equipment-status",
+          "label": "Equipment Status",
+          "icon": "fas fa-heartbeat",
+          "path": "/equipment/status",
+          "badge": {
+            "count": 2,
+            "variant": "danger"
+          },
+          "permission": ["Admin", "LogisticsOfficer", "BaseCommander"]
+        },
+        {
+          "id": "maintenance",
+          "label": "Maintenance Tracking",
+          "icon": "fas fa-wrench",
+          "path": "/equipment/maintenance",
+          "badge": {
+            "count": 8,
+            "variant": "warning"
+          },
+          "permission": ["Admin", "LogisticsOfficer"]
+        }
+      ]
+    },
+    {
+      "id": "missions",
+      "title": "Mission Management",
+      "collapsible": true,
+      "defaultOpen": true,
+      "items": [
+        {
+          "id": "missions-list",
+          "label": "Missions",
+          "icon": "fas fa-rocket",
+          "path": "/missions/list",
+          "badge": {
+            "count": 5,
+            "variant": "info"
+          },
+          "permission": ["Admin", "BaseCommander"]
+        },
+        {
+          "id": "mission-status",
+          "label": "Mission Status",
+          "icon": "fas fa-flag-checkered",
+          "path": "/missions/status",
+          "badge": {
+            "count": 5,
+            "variant": "info"
+          },
+          "permission": ["Admin", "BaseCommander", "LogisticsOfficer"]
+        },
+        {
+          "id": "unit-deployment",
+          "label": "Unit Deployment",
+          "icon": "fas fa-clipboard-list",
+          "path": "/missions/deployment",
+          "permission": ["Admin", "BaseCommander"]
+        }
+      ]
+    },
+    {
+      "id": "system",
+      "title": "System Management",
+      "collapsible": true,
+      "defaultOpen": false,
+      "items": [
+        {
+          "id": "users",
+          "label": "Users",
+          "icon": "fas fa-users",
+          "path": "/system/users",
+          "permission": ["Admin"]
+        },
+        {
+          "id": "settings",
+          "label": "Settings",
+          "icon": "fas fa-sliders-h",
+          "path": "/system/settings",
+          "permission": ["Admin"]
+        },
+        {
+          "id": "logs",
+          "label": "Activity Logs",
+          "icon": "fas fa-history",
+          "path": "/system/logs",
+          "permission": ["Admin"]
+        }
+      ]
+    },
+    {
+      "id": "account",
+      "title": null,
+      "collapsible": false,
+      "defaultOpen": true,
+      "items": [
+        {
+          "id": "profile",
+          "label": "My Profile",
+          "icon": "fas fa-user-circle",
+          "path": "/profile",
+          "permission": []
+        },
+        {
+          "id": "logout",
+          "label": "Logout",
+          "icon": "fas fa-sign-out-alt",
+          "path": "/logout",
+          "permission": []
+        }
+      ]
+    }
+  ]
+}
