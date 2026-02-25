@@ -1,4 +1,4 @@
-# Military Asset Management System (MMS)
+# Military Resource Management System (MRMS)
 
 A full-stack web application for managing military assets, tracking movements, assignments, and expenditures across multiple bases with role-based access control.
 
